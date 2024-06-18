@@ -1,0 +1,20 @@
+Treasure hunt Code(Indentation combination and variables basics)
+
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+choose_path = input("Choose the Path , if you want to go to left or right?")
+x = choose_path.lower()
+if x == "right":
+  print ("Oops! Game Over, you choose a wrong path.Treasure hunt Ends here !")
+elif x == "left": 
+ move_forward = input("Now, let's move forward in our tresure hunt , and make a choice of patience either to swim or to wait!")
+ y = move_forward.lower() 
+ if y == "swim":
+     print("Oops! Game Over, you should have little more patience.Treasure hunt Ends here !")
+ elif y == "wait":
+  choose_color = input("One last choice before you open the treasure: choose a color - red, blue, or yellow?")
+  z = choose_color.lower()
+  if z == "red" or z == "blue":
+      print ("Oops! Game Over, No more choices.Treasure hunt Ends here !")
+  elif z == "yellow":
+       print ("You passed all the levels You win the treasure!")
